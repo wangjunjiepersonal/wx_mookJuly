@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='header'>
+    <w-epsoide class="epsoide" index="{{classic.index}}"></w-epsoide>
+    <view class='like-container'>
+      <w-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}"/>
+      <w-imgbtn class="share-btn" open-type="share">
+        <image class="share" slot="img" src="../../images/share.png" />
+      </w-imgbtn>
+    </view>
+  </view>
+  <w-movie 
+    hidden="{{classic.type!=100}}" 
+    img="{{classic.image}}" 
+    text="{{classic.content}}"></w-movie>
+  <w-music 
+    wx:if="{{classic.type==200}}" 
+    img="{{classic.image}}" 
+    src="{{classic.url}}"
+    title="{{classic.title}}"
+    text="{{classic.content}}"></w-music>
+  <w-essay 
+    hidden="{{classic.type!=300}}" 
+    img="{{classic.image}}" 
+    text="{{classic.content}}"></w-essay>
+  <w-navi 
+    title="{{classic.title}}" 
+    first="{{first}}" 
+    latest="{{latest}}" 
+    bind:left="onNext"
+    bind:right="onPrev"
+    class="navi"></w-navi>
+</view>

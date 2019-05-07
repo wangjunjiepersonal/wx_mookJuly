@@ -1,0 +1,35 @@
+/* components/epsoide/index.wxss */
+.container{
+  height: 60rpx;
+  display: flex;
+  flex-direction:now;
+}
+.index-container text:nth-child(1){
+  font-size: 32rpx;
+}
+.index-container text:nth-child(2){
+  font-size: 44rpx;
+  line-height: 60rpx;
+  font-weight: 800;
+  margin-right: 14rpx;
+}
+.index-container text:nth-child(3){
+  height: 44rpx;
+  margin-right: 14rpx;
+  border-left: 2px solid #000;
+  align-items: center;
+}
+.data-container{
+  height: 60rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rpx;
+}
+.data-container:nth-child(1){
+  font-size: 24rpx;
+  line-height: 24rpx;
+  margin-right: 2rpx;
+}
+.data-container:nth-child(2){
+  font-size: 20rpx;
+}

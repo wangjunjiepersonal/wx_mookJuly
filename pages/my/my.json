@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-tag": "../../components/tag/index",
+    "w-imgbtn": "../../components/img-btn/index",
+    "w-preview": "../../components/preview/index"
+  }
+}

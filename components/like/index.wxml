@@ -1,0 +1,6 @@
+<!--components/like/index.wxml-->
+<!-- 心型图标组件 -->
+<view class='container' catch:tap='onLike'>
+  <image src='{{like?ySrc:nSrc}}'></image>
+  <text>{{count}}</text>
+</view>
