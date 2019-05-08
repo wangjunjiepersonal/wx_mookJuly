@@ -34,7 +34,7 @@ Page({
         likeStatus: res.like_status,
         likeCount: res.fav_nums
       })
-      console.log(res)
+      
     })
     
   },

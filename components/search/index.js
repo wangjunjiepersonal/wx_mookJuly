@@ -83,7 +83,6 @@ Component({
     },
     // observer方法
     _load_more(){
-      console.log(123)
       if(!this.data.q){return}
       if(this.data.loading){return}
       if(this.hasMore()){

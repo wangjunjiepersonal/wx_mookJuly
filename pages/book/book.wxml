@@ -18,7 +18,6 @@
       </view>
     </view>
   </view>
-  <search-cmp more="{{more}}" wx:if="{{searchPanel}}" bind:cancel="onCancel" />
 </view>
-<!-- 评论组件 -->
+<!-- 搜索组件 -->
 <w-search more="{{more}}" bind:cancel="onCancel" wx:if="{{searching}}" />

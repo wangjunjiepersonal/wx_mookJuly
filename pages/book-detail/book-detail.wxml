@@ -49,9 +49,9 @@
   </view>
   <view class="like-container">
     <w-like class="like" bind:like="onLike" like="{{like}}" count="{{count}}" />
-    <img-btn-cmp class="share-btn" open-type="share">
+    <w-imgbtn class="share-btn" open-type="share">
       <image class="share" slot="img" src="../../images/share.png" />
-    </img-btn-cmp>
+    </w-imgbtn>
   </view>
 </view>
 <w-mask wx:if="{{posting}}" />
