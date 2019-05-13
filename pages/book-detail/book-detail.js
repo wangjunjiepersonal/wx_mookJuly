@@ -8,9 +8,10 @@ let likeModel = new LikeModel()
 Page({
 
   /**
-   * 页面的初始数据
+   * 页面的初始数据 
    */
   data: {
+    // 书籍的短评 书名 喜欢的状态  喜欢的数量 评论的输入框
     comments:[],
     book:null,
     likeStatus:false,
@@ -60,7 +61,7 @@ Page({
     const like_or_cancel = e.detail.behavior
     likeModel.like(like_or_cancel, this.data.book.id, 400)
   },
-  //点击输入框
+  //点击评论输入框
   onFakePost(e){
     this.setData({
       posting: true

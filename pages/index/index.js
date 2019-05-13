@@ -15,7 +15,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    //接收数据参数 是否为第一个 是否为最后一个
+    //接收数据参数 是否为第一个 是否为最新的一个 喜欢的数量 喜欢的状态
     classic:null,
     first:false,
     latest:true,
@@ -34,7 +34,7 @@ Page({
         likeStatus: res.like_status,
         likeCount: res.fav_nums
       })
-      
+      console.log(res)
     })
     
   },

@@ -5,6 +5,7 @@ const key = 'q'
 const max = 10
 class KeywordModel extends Http {
   
+  //获取热门消息
   getHistory() {
     const words = wx.getStorageSync(key)
     if (!words) {
@@ -12,7 +13,7 @@ class KeywordModel extends Http {
     }
     return words
   }
-
+  //获取热门数据
   getHot() {
     return this.request({
       url: '/book/hot_keyword'

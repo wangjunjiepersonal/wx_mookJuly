@@ -2,7 +2,7 @@
 import {Http} from '../utils/http.js'
 
 class ClassicModel  extends Http{
-  // 请求最新下一张的内容
+  // 请求最新一期的内容
   getLatest(callback){
     this.request({
       url: 'classic/latest',
@@ -14,7 +14,7 @@ class ClassicModel  extends Http{
       }
     })
   }
-  //请求上一张下一张的合写方法 方法请求路径一致 只是后缀不同
+  //请求最新一期和第一期的合写方法 方法请求路径一致 只是后缀不同
   getClassic(index,norp,callback){
     let key = norp == 'next' ? this._getKey(index + 1) : this._getKey(index - 1)
     let classic = wx.getStorageSync(key)
